@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.register_form_container{
+    margin-top: 100px;
+}
+
+.register_form_container form .text-center span a{
+    color: #3294e9;
+    text-decoration: none;
+    cursor: pointer;
+}
