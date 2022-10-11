@@ -8,7 +8,7 @@
    $css = "assets/css/" ; 
    $js = "assets/js/" ;
    $jQuery = "assets/jQuery/" ;
-   $imges = "assets/images/" ; 
+   $images = "assets/images/" ; 
 
 
    include "header.php" ; 

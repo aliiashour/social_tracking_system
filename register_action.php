@@ -22,7 +22,8 @@
         }else{
             $stmt = $con->prepare("SELECT * FROM users WHERE user_user_name = '$user_uname'") ; 
             $stmt->execute() ;
-            if($stmt->columnCount() > 0 ){
+            $count = $stmt->rowCount() ; 
+            if($count > 1 ){
                 $output = '<div class="alert alert-danger">This <strong>username</strong> is already Exist</div>' ; 
             }
         }

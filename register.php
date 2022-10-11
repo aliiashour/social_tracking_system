@@ -10,22 +10,22 @@
             <span id="response"></span>
             <form method="POST" id="user_register_form">
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Name</label>
+                    <label for="user_name" class="form-label">Name</label>
                     <input type="text" class="form-control" name = "user_name" id="user_name">
                     <div id="user_name_help" class="form-text">Enter your full name.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputUserName" class="form-label">User Name</label>
+                    <label for="user_uname" class="form-label">User Name</label>
                     <input type="text" class="form-control" name = "user_uname" id="user_uname">
                     <div id="user_uname_help" class="form-text">Your user name should be unique one.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <label for="user_email" class="form-label">Email address</label>
                     <input type="email" class="form-control" name = "user_email" id="user_email" aria-describedby="emailHelp">
                     <div id="user_email_help" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="user_password" class="form-label">Password</label>
                     <input type="password" class="form-control" name = "user_password" id="user_password">
                 </div>
                 <div class="mb-3 form-check text-center">
@@ -76,7 +76,7 @@
                     }, 2500) ; 
                     
                 }else{
-                    window.location.href = "index.php" ; 
+                    window.location.href = "login.php" ; 
                 }
             }
             
