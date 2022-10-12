@@ -7,30 +7,22 @@
         $user_in_session= true ; 
     }
 ?>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">Foolwing</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php">Twitter</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
                         <?php
                             if($user_in_session){
                                 ?>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <?php  echo $_SESSION['user_uname'] ; ?>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="./profile.php">Profile</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="logout.php">Logout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <?php echo $_SESSION['user_uname'] ; ?>
+                                    </a>
                                 <?php
                             }else{
                                 ?>
@@ -39,15 +31,30 @@
                                     </a>
                                 <?php
                             }
-                        
-                        ?>
+                                    
+                            ?>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./profile.php">Profile</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="logout.php">Logout</a>
+                                </li>
+                            </ul>
+
+                    </li>
                 </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+   
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8 mt-5 mb-5">
+                <div class="col-12 col-sm-12 col-md-8 mt-5 mb-5">
                     <?php
                         if($user_in_session){
                             ?>
@@ -92,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-12 col-md-4 mt-5">
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">all users</div>

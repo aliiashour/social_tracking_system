@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6 register_form_container">
+        <div class="col-12 col-sm-10 col-md-8  register_form_container">
             <span id="response"></span>
             <form method="POST" id="user_register_form">
                 <div class="mb-3">
