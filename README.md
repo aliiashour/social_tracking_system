@@ -9,6 +9,8 @@ An educational project for me, to learn building PHP websites with AJAX Methodol
 
 ## General Info
 a NATIVE-PHP back-end website for following any one you like to follow
+#### for live demo
+[http://ajaxtwitter.epizy.com/index.php]
 
 ## Technologies
 
